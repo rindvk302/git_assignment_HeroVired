@@ -14,9 +14,10 @@ class Calculator:
     def divide(self, a, b):
         return a / b
 
-    # TODO: Implement the following function to calculate the square root of a number.
-    # def square_root(self, x):
-    #     return math.sqrt(x)
+    def square_root(self, x):
+        if x < 0:
+            raise ValueError("Cannot take the square root of a negative number.")
+        return math.sqrt(x)
 
 if __name__ == "__main__":
     calculator = Calculator()
